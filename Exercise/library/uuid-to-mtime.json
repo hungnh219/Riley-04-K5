@@ -498,5 +498,20 @@
     "asset": 1746541981831,
     "meta": 1746544170532,
     "relativePath": "Day1\\Bai7\\D1_Bai7.fire"
+  },
+  "6df4591c-4e5b-41a2-819b-cfe798663ba4": {
+    "asset": 1746544330518,
+    "meta": 1746544330520,
+    "relativePath": "Day1\\Bai8"
+  },
+  "dd7b2e42-070c-40c4-939b-eb534b876a49": {
+    "asset": 1746544868147,
+    "meta": 1746544868171,
+    "relativePath": "Day1\\Bai8\\D1_Bai8.fire"
+  },
+  "fec356a2-8530-448b-83fd-d546c9a9c737": {
+    "asset": 1746544819737,
+    "meta": 1746544823778,
+    "relativePath": "scripts\\MainScript_18.js"
   }
 }
