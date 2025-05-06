@@ -51,7 +51,7 @@
     "_is3DNode": true,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "60e8e3c7-0e3e-4c51-93e5-3f8a3aa81e37"
+    "_id": "0bacdc65-77b1-4a7f-a29c-6ccb7956512b"
   },
   {
     "__type__": "cc.Node",
@@ -294,7 +294,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "87123e7f-3090-491f-b661-374c5f4c6f8c"
+      "__uuid__": "55f0c6e4-7fb0-445f-88e0-374de33b1906"
     },
     "_type": 0,
     "_sizeMode": 1,
