@@ -420,12 +420,12 @@
     "relativePath": "model\\primitives.fbx"
   },
   "2170d9ea-0bda-4e3e-8796-a45ec0b4221e": {
-    "asset": 1746526835877,
+    "asset": 1746529381988,
     "meta": 1746524259772,
     "relativePath": "scripts"
   },
   "6c9571b4-aa36-4535-85f4-77b0057672b2": {
-    "asset": 1746526835871,
+    "asset": 1746529381984,
     "meta": 1746521692988,
     "relativePath": "Day1"
   },
@@ -445,7 +445,7 @@
     "relativePath": "SceneDay1"
   },
   "7e9d1b34-7c3b-427d-a45a-38577c911aee": {
-    "asset": 1746526835873,
+    "asset": 1746529381984,
     "meta": 1746526835871,
     "relativePath": "Day1\\Bai6"
   },
@@ -455,7 +455,7 @@
     "relativePath": "Day1\\Bai3\\D1_Bai3.fire"
   },
   "eff2dac0-c95c-48ae-a948-8b43fb21c100": {
-    "asset": 1746526835875,
+    "asset": 1746529381987,
     "meta": 1746526835873,
     "relativePath": "images"
   },
@@ -469,34 +469,34 @@
     "meta": 1746526914401,
     "relativePath": "scripts\\MainScript_16.js"
   },
+  "911e4a1d-5323-4e70-952d-71a2528a5184": {
+    "asset": 1746529381985,
+    "meta": 1746529381984,
+    "relativePath": "Day1\\Bai7"
+  },
   "0bacdc65-77b1-4a7f-a29c-6ccb7956512b": {
-    "asset": 1746527012285,
-    "meta": 1746527012317,
+    "asset": 1746529381983,
+    "meta": 1746541971124,
     "relativePath": "Day1\\Bai6\\D1_Bai6.fire"
   },
   "f6ecc8ff-b6f5-441a-b6d7-310accb2a0bc": {
     "asset": 1746526835873,
-    "meta": 1746526966582,
+    "meta": 1746541971148,
     "relativePath": "images\\background-main-scene.jpg"
   },
   "04d6ebe3-c532-42ad-a7b6-69c79ebcde18": {
     "asset": 1746526835875,
-    "meta": 1746526966612,
+    "meta": 1746541971202,
     "relativePath": "images\\background.jpg"
   },
-  "911e4a1d-5323-4e70-952d-71a2528a5184": {
-    "asset": 1746527147335,
-    "meta": 1746527152350,
-    "relativePath": "Day1\\Bai7"
-  },
-  "0a762f6a-f14b-4e3e-a560-5f91b890a758": {
-    "asset": 1746527159947,
-    "meta": 1746527164687,
-    "relativePath": "Day1\\Bai7\\D1_Bai7.fire"
-  },
   "53674216-deef-42eb-ac35-cf00d69fe453": {
-    "asset": 1746529262236,
-    "meta": 1746529263763,
+    "asset": 1746529381988,
+    "meta": 1746541971202,
     "relativePath": "scripts\\MainScript_17.js"
+  },
+  "4859f402-6b8a-4468-8ae1-bd495bd7f3a4": {
+    "asset": 1746541981831,
+    "meta": 1746544170532,
+    "relativePath": "Day1\\Bai7\\D1_Bai7.fire"
   }
 }

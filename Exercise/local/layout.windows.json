@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 0,
-      "width": 1536,
-      "height": 816,
+      "x": -8,
+      "y": -8,
+      "width": 1552,
+      "height": 832,
       "layout": {
         "children": [
           {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 348.0874938964844,
+                "height": 355.2875061035156,
                 "type": "panel",
-                "width": 246.0625
+                "width": 248.27500915527344
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 349.1000061035156,
+                "height": 356.3000183105469,
                 "type": "panel",
-                "width": 246.0625
+                "width": 248.27500915527344
               }
             ],
-            "height": 699.2000122070312,
+            "height": 713.6000366210938,
             "type": "dock-v",
-            "width": 246.0625
+            "width": 248.27500915527344
           },
           {
             "children": [
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 430.7375183105469,
+                "height": 439.63751220703125,
                 "type": "panel",
-                "width": 906.2374877929688
+                "width": 914.3500366210938
               },
               {
                 "active": 2,
@@ -54,14 +54,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 266.4624938964844,
+                "height": 271.9624938964844,
                 "type": "panel",
-                "width": 906.2374877929688
+                "width": 914.3500366210938
               }
             ],
-            "height": 699.2000122070312,
+            "height": 713.6000366210938,
             "type": "dock-v",
-            "width": 906.2374877929688
+            "width": 914.3500366210938
           },
           {
             "active": 0,
@@ -69,9 +69,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 699.2000122070312,
+            "height": 713.6000366210938,
             "type": "panel",
-            "width": 366.1000061035156
+            "width": 369.375
           }
         ],
         "type": "dock-h"
