@@ -525,8 +525,23 @@
     "relativePath": "Day1\\Bai9\\D1_Bai9.fire"
   },
   "5781144c-b467-41b9-b140-7fe957ced3f9": {
-    "asset": 1746545531964,
-    "meta": 1746545533141,
+    "asset": 1746545545299,
+    "meta": 1746545698228,
     "relativePath": "scripts\\MainScript_19.js"
+  },
+  "086e5c68-c289-477f-9845-36b158f9fe59": {
+    "asset": 1746545707247,
+    "meta": 1746545707248,
+    "relativePath": "Day1\\Bai10"
+  },
+  "c6ace833-f903-4a75-932c-9ef42b76fd9f": {
+    "asset": 1746546536957,
+    "meta": 1746546537015,
+    "relativePath": "Day1\\Bai10\\D1_Bai10.fire"
+  },
+  "b1116386-16d5-4c4d-9ef1-89a752f167d1": {
+    "asset": 1746546625264,
+    "meta": 1746546630368,
+    "relativePath": "scripts\\MainScript_110.js"
   }
 }
