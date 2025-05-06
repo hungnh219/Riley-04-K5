@@ -2,7 +2,7 @@
 cc._RF.push(module, 'cad65LqsURFNYGmwR3cDmia', 'basic_character', __filename);
 // scripts/basic_character.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -15,28 +15,35 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
+        console.log('check 1');
         this.name = 'Riley';
-        this.hp = 10;
+        this.baseHp = 10;
+        this.hp = this.baseHp;
         this.point = 0;
-
+    },
+    start: function start() {
         this.nameLabel.string = "Name: " + this.name;
+
         this.pointLabel.string = "Point: " + this.point;
+
         this.hpLabel.string = "Hp: " + this.hp;
     },
-    start: function start() {},
-    update: function update(dt) {
-        // this.nameLabel.string = "Name: " + this.name + dt;
-    },
+    update: function update(dt) {},
     onUpdate: function onUpdate() {},
     onClick: function onClick() {
-        console.log('heheh');
-        this.point++;
-        console.log(this.point);
-        this.pointLabel.string = "Point: " + this.point;
+        this.updatePoint();
+
         if (this.point % 10 == 0) {
-            this.hp++;
-            this.hpLabel.string = "Hp: " + this.hp;
+            this.updateHp();
         }
+    },
+    updatePoint: function updatePoint() {
+        this.point++;
+        this.pointLabel.string = "Point: " + this.point;
+    },
+    updateHp: function updateHp() {
+        this.hp = this.baseHp + this.point / 10;
+        this.hpLabel.string = "Hp: " + this.hp;
     }
 });
 

@@ -1,0 +1,289 @@
+2025-05-06T07:25:19.945Z - normal: Load ~/.CocosCreator/settings.json
+2025-05-06T07:25:21.045Z - normal: Initializing Asset Database
+2025-05-06T07:25:21.059Z - normal: checking language setting...
+2025-05-06T07:25:21.059Z - normal: Language: en
+2025-05-06T07:25:21.505Z - success: preview server running at http://localhost:7456
+2025-05-06T07:25:21.505Z - success: protocol editor-framework registered
+2025-05-06T07:25:21.505Z - success: protocol app registered
+2025-05-06T07:25:21.505Z - success: protocol theme registered
+2025-05-06T07:25:21.505Z - success: protocol packages registered
+2025-05-06T07:25:21.505Z - success: protocol uuid registerred
+2025-05-06T07:25:21.505Z - success: protocol db registerred
+2025-05-06T07:25:21.505Z - success: protocol thumbnail registerred
+2025-05-06T07:25:21.505Z - success: protocol unpack registerred
+2025-05-06T07:25:21.505Z - success: protocol disable-commonjs registerred
+2025-05-06T07:25:21.985Z - normal: connected!
+2025-05-06T07:25:21.985Z - normal: Check project D:\enotion\cocos-creator-k5\Exercise
+2025-05-06T07:25:22.001Z - normal: Initializing project D:\enotion\cocos-creator-k5\Exercise
+2025-05-06T07:25:22.271Z - normal: Initializing Cocos2d
+2025-05-06T07:25:22.892Z - normal: Initializing engine extends
+2025-05-06T07:25:22.908Z - success: alipay-adapter loaded
+2025-05-06T07:25:22.908Z - success: asset-db-debugger loaded
+2025-05-06T07:25:22.908Z - success: baidu-adapter loaded
+2025-05-06T07:25:22.908Z - success: color-picker loaded
+2025-05-06T07:25:23.004Z - success: fb-audience-network loaded
+2025-05-06T07:25:23.043Z - success: fb-live-stream loaded
+2025-05-06T07:25:23.047Z - success: google-play-instant loaded
+2025-05-06T07:25:23.052Z - success: huawei-runtime loaded
+2025-05-06T07:25:23.235Z - success: cpk-publish loaded
+2025-05-06T07:25:23.246Z - success: jsb-adapter loaded
+2025-05-06T07:25:23.250Z - success: oppo-runtime loaded
+2025-05-06T07:25:23.250Z - success: package-manager loaded
+2025-05-06T07:25:23.351Z - success: qqplay-adapter loaded
+2025-05-06T07:25:23.351Z - success: runtime-dev-tools loaded
+2025-05-06T07:25:23.351Z - success: sdkbox loaded
+2025-05-06T07:25:23.351Z - success: tester loaded
+2025-05-06T07:25:23.363Z - success: ui-kit-preview-extra loaded
+2025-05-06T07:25:23.365Z - success: ui-kit-preview loaded
+2025-05-06T07:25:23.365Z - success: ui-kit loaded
+2025-05-06T07:25:23.365Z - success: vivo-runtime loaded
+2025-05-06T07:25:23.365Z - success: weapp-adapter loaded
+2025-05-06T07:25:23.365Z - success: xiaomi-adapter loaded
+2025-05-06T07:25:23.365Z - success: alipay-minigame loaded
+2025-05-06T07:25:23.398Z - success: assets loaded
+2025-05-06T07:25:23.398Z - success: builder loaded
+2025-05-06T07:25:23.598Z - success: cocos-services loaded
+2025-05-06T07:25:23.598Z - success: console loaded
+2025-05-06T07:25:23.634Z - success: fb-instant-games loaded
+2025-05-06T07:25:23.634Z - success: game-window loaded
+2025-05-06T07:25:23.634Z - success: google-instant-games loaded
+2025-05-06T07:25:23.648Z - success: hierarchy loaded
+2025-05-06T07:25:23.651Z - success: inspector loaded
+2025-05-06T07:25:23.651Z - success: keystore loaded
+2025-05-06T07:25:23.651Z - success: node-library loaded
+2025-05-06T07:25:23.651Z - success: package-asset loaded
+2025-05-06T07:25:23.651Z - success: preferences loaded
+2025-05-06T07:25:23.651Z - success: project-exporter loaded
+2025-05-06T07:25:23.651Z - success: project-importer loaded
+2025-05-06T07:25:23.651Z - success: project-settings loaded
+2025-05-06T07:25:23.664Z - success: scene loaded
+2025-05-06T07:25:23.664Z - success: simulator-debugger loaded
+2025-05-06T07:25:23.664Z - success: sprite-editor loaded
+2025-05-06T07:25:23.664Z - success: store loaded
+2025-05-06T07:25:23.664Z - success: timeline loaded
+2025-05-06T07:25:23.681Z - success: xiaomi-runtime loaded
+2025-05-06T07:25:24.414Z - normal: Loading packages
+2025-05-06T07:25:24.431Z - normal: Watching packages
+2025-05-06T07:25:24.803Z - normal: Run Application
+2025-05-06T07:25:29.458Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:25:29.459Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:28:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:38:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:25:36.799Z - info: Cocos Services load base data!
+2025-05-06T07:28:08.830Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:28:08.831Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:28:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:38:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:30:38.641Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:30:38.642Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:28:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:38:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:34:07.859Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:34:07.864Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:28:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:38:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:35:31.340Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:35:31.341Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:31:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:38:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:41:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:44:56.837Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:44:56.842Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:34:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:41:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:44:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:45:58.475Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2025-05-06T07:45:58.476Z - normal: Simulator: WORKAREA WIDTH 1528.00, HEIGHT 765.00
+2025-05-06T07:45:58.476Z - normal: Simulator: FRAME SCALE = 1.00
+2025-05-06T07:45:58.561Z - normal: Simulator: Ready for GLSL
+2025-05-06T07:45:58.562Z - normal: Simulator: Ready for OpenGL 2.0
+2025-05-06T07:45:58.578Z - normal: Simulator: Project Config:
+2025-05-06T07:45:58.578Z - normal: Simulator:     project dir: C:\CocosCreator_2.1.3\resources\cocos2d-x\simulator\win32\
+2025-05-06T07:45:58.578Z - normal: Simulator:     writable path: $(PROJDIR)\
+2025-05-06T07:45:58.578Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2025-05-06T07:45:58.578Z - normal: Simulator:     frame size: 960 x 640
+2025-05-06T07:45:58.579Z - normal: Simulator:     frame scale: 1.00
+2025-05-06T07:45:58.580Z - normal: Simulator:     show console: NO
+2025-05-06T07:45:58.580Z - normal: Simulator:     write debug log: NO ()
+2025-05-06T07:45:58.581Z - normal: Simulator:     listen: 
+2025-05-06T07:45:58.581Z - normal: Simulator:     debugger: none
+2025-05-06T07:45:58.581Z - normal: Simulator:     add searching path:
+2025-05-06T07:45:58.581Z - normal: Simulator: 
+2025-05-06T07:45:58.582Z - normal: Simulator: 
+2025-05-06T07:45:58.582Z - normal: Simulator: 
+2025-05-06T07:45:58.582Z - normal: Simulator: resetDesignResolution request
+2025-05-06T07:45:58.582Z - normal: Simulator: ------------------------------------------------
+2025-05-06T07:45:58.582Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2025-05-06T07:45:58.582Z - normal: Simulator: ------------------------------------------------
+2025-05-06T07:45:58.582Z - normal: Simulator: D/jswrapper (367): Initializing V8, version: 7.5.288.22
+2025-05-06T07:45:59.646Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2025-05-06T07:45:59.648Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2025-05-06T07:45:59.649Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2025-05-06T07:45:59.681Z - normal: Simulator: D/jswrapper (130): JS: Enable batch GL commands optimization!
+2025-05-06T07:45:59.684Z - normal: Simulator: resetDesignResolution request
+2025-05-06T07:45:59.684Z - normal: Simulator: ------------------------------------------------
+2025-05-06T07:45:59.684Z - normal: Simulator: LOAD Js FILE: main.js
+2025-05-06T07:45:59.684Z - normal: Simulator: ------------------------------------------------
+2025-05-06T07:46:00.236Z - normal: Simulator: iShow!
+2025-05-06T07:46:00.242Z - normal: Simulator: D/jswrapper (130): JS: [WARN]: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:46:00.246Z - normal: Simulator: D/jswrapper (130): JS: [ERROR]: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+2025-05-06T07:46:00.248Z - normal: Simulator: D/jswrapper (4159): glGetIntegerv: pname: 0x8b4c
+2025-05-06T07:46:00.290Z - normal: Simulator: D/jswrapper (130): JS: Cocos Creator v2.1.3
+2025-05-06T07:46:06.338Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:07.232Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:07.973Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:08.512Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:08.672Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:08.843Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:09.005Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:09.173Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:09.327Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:09.491Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:09.661Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:09.839Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:46:10.059Z - normal: Simulator: D/jswrapper (130): JS: hehe
+2025-05-06T07:58:34.235Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:58:34.239Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:34:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:41:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:44:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:59:03.334Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T07:59:03.335Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:42:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:45:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T07:59:24.175Z - normal: Simulator: D/jswrapper (453): ScriptEngine::cleanup begin ...
+2025-05-06T07:59:24.175Z - normal: Simulator: D/jswrapper (592): GC begin ..., (js->native map) size: 70, all objects: 150
+2025-05-06T07:59:24.208Z - normal: Simulator: D/jswrapper (600): GC end ..., (js->native map) size: 31, all objects: 111
+2025-05-06T07:59:24.209Z - normal: Simulator: D/jswrapper (592): GC begin ..., (js->native map) size: 31, all objects: 111
+2025-05-06T07:59:24.225Z - normal: Simulator: D/jswrapper (600): GC end ..., (js->native map) size: 31, all objects: 111
+2025-05-06T07:59:24.225Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (3) by GC
+2025-05-06T07:59:24.226Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (2) by GC
+2025-05-06T07:59:24.226Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (4) by GC
+2025-05-06T07:59:24.226Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (5) by GC
+2025-05-06T07:59:24.226Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (8) by GC
+2025-05-06T07:59:24.226Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (9) by GC
+2025-05-06T07:59:24.226Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (5) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (1) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (8) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (6) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (270): Destroy WebGLBuffer (7) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (1) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (2) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (4) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (6) by GC
+2025-05-06T07:59:24.228Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (3) by GC
+2025-05-06T07:59:24.230Z - normal: Simulator: D/jswrapper (308): Destroy WebGLFramebuffer (1) by GC
+2025-05-06T07:59:24.230Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (7) by GC
+2025-05-06T07:59:24.231Z - normal: Simulator: D/jswrapper (251): Destroy WebGLTexture (10) by GC
+2025-05-06T07:59:24.233Z - normal: Simulator: D/jswrapper (327): Destroy WebGLProgram (3) by GC
+2025-05-06T07:59:24.233Z - normal: Simulator: D/jswrapper (592): GC begin ..., (js->native map) size: 0, all objects: 0
+2025-05-06T07:59:24.256Z - normal: Simulator: D/jswrapper (600): GC end ..., (js->native map) size: 0, all objects: 0
+2025-05-06T07:59:24.256Z - normal: Simulator: D/jswrapper (514): ScriptEngine::cleanup end ...
+2025-05-06T08:00:02.619Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T08:00:02.619Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:42:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:45:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T08:00:21.299Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T08:00:21.300Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:34:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:41:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:44:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T08:00:56.878Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T08:00:56.878Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:42:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:45:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T08:01:37.995Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T08:01:37.995Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:36:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:43:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:46:3)
+    at Module._compile (module.js:571:32)
+2025-05-06T08:11:09.034Z - warn: 'basic_character.name' hides inherited property 'cc.Component.name'. To make the current property override that implementation, add the `override: true` attribute please.
+2025-05-06T08:11:09.035Z - error: Can not declare basic_character.name, it is already defined in the prototype of basic_character
+    at Object.cc.errorID (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\CCDebug.js:167:16)
+    at defineProp (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:121:24)
+    at declareProperties (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:635:25)
+    at Object.CCClass [as Class] (C:\CocosCreator_2.1.3\resources\engine\bin\.cache\dev\cocos2d\core\platform\CCClass.js:674:17)
+    at __define (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:7:4)
+    at D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:35:13
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:42:11)
+    at Object.<anonymous> (D:\enotion\cocos-creator-k5\Exercise\temp\quick-scripts\assets\scripts\basic_character.js:45:3)
+    at Module._compile (module.js:571:32)

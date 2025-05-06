@@ -424,11 +424,6 @@
     "meta": 1746515994861,
     "relativePath": "scripts"
   },
-  "cad652ea-b144-4535-81a6-c11ddc0e689a": {
-    "asset": 1746520621086,
-    "meta": 1746521365094,
-    "relativePath": "scripts\\basic_character.js"
-  },
   "6c9571b4-aa36-4535-85f4-77b0057672b2": {
     "asset": 1746521657627,
     "meta": 1746521692988,
@@ -450,8 +445,33 @@
     "relativePath": "SceneDay1"
   },
   "814db8ac-2c37-4b76-8c87-09448b86363f": {
-    "asset": 1746520520376,
-    "meta": 1746521693010,
+    "asset": 1746523705154,
+    "meta": 1746523705193,
     "relativePath": "Day1\\Bai3\\D1_Bai3.fire"
+  },
+  "89a0c6b4-7ddd-4713-9608-8febd8893e3e": {
+    "asset": 1746521853805,
+    "meta": 1746521853804,
+    "relativePath": "Day1\\D1_Bai1"
+  },
+  "5a4e02dc-01b3-46bc-bda4-bbecc39ae97c": {
+    "asset": 1746521853806,
+    "meta": 1746521853805,
+    "relativePath": "Day1\\D1_Bai2"
+  },
+  "02cd84c2-fda0-4e88-80c2-13a90551feca": {
+    "asset": 1746521853805,
+    "meta": 1746521878345,
+    "relativePath": "Day1\\D1_Bai1\\D1_Bai1.fire"
+  },
+  "b0a59578-ea45-4f5a-b201-cbc8b6960b89": {
+    "asset": 1746521853806,
+    "meta": 1746521878347,
+    "relativePath": "Day1\\D1_Bai2\\D1_Bai2.fire"
+  },
+  "cad652ea-b144-4535-81a6-c11ddc0e689a": {
+    "asset": 1746523563447,
+    "meta": 1746523584757,
+    "relativePath": "scripts\\basic_character.js"
   }
 }
