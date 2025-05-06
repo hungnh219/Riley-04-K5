@@ -1,8 +1,8 @@
 "use strict";
-cc._RF.push(module, 'cad65LqsURFNYGmwR3cDmia', 'basic_character');
-// scripts/basic_character.js
+cc._RF.push(module, 'cad65LqsURFNYGmwR3cDmia', 'MainScript_13');
+// scripts/MainScript_13.js
 
-'use strict';
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -15,7 +15,6 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
-        console.log('check 1');
         this.name = 'Riley';
         this.baseHp = 10;
         this.hp = this.baseHp;
@@ -23,9 +22,7 @@ cc.Class({
     },
     start: function start() {
         this.nameLabel.string = "Name: " + this.name;
-
         this.pointLabel.string = "Point: " + this.point;
-
         this.hpLabel.string = "Hp: " + this.hp;
     },
     update: function update(dt) {},

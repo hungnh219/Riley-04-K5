@@ -420,18 +420,18 @@
     "relativePath": "model\\primitives.fbx"
   },
   "2170d9ea-0bda-4e3e-8796-a45ec0b4221e": {
-    "asset": 1746516012083,
-    "meta": 1746515994861,
+    "asset": 1746524409569,
+    "meta": 1746524259772,
     "relativePath": "scripts"
   },
   "6c9571b4-aa36-4535-85f4-77b0057672b2": {
-    "asset": 1746521657627,
+    "asset": 1746524684213,
     "meta": 1746521692988,
     "relativePath": "Day1"
   },
   "48792268-0a64-4770-afac-555a0bd37f32": {
-    "asset": 1746515833970,
-    "meta": 1746515824373,
+    "asset": 1746524409566,
+    "meta": 1746524259770,
     "relativePath": "Day1\\Bai3"
   },
   "c9cf3afe-8163-4c97-af5e-e26bea3ffbc5": {
@@ -445,8 +445,8 @@
     "relativePath": "SceneDay1"
   },
   "814db8ac-2c37-4b76-8c87-09448b86363f": {
-    "asset": 1746523705154,
-    "meta": 1746523705193,
+    "asset": 1746525131119,
+    "meta": 1746525131150,
     "relativePath": "Day1\\Bai3\\D1_Bai3.fire"
   },
   "89a0c6b4-7ddd-4713-9608-8febd8893e3e": {
@@ -470,8 +470,38 @@
     "relativePath": "Day1\\D1_Bai2\\D1_Bai2.fire"
   },
   "cad652ea-b144-4535-81a6-c11ddc0e689a": {
-    "asset": 1746523563447,
-    "meta": 1746523584757,
-    "relativePath": "scripts\\basic_character.js"
+    "asset": 1746524409569,
+    "meta": 1746525052250,
+    "relativePath": "scripts\\MainScript_13.js"
+  },
+  "7e9d1b34-7c3b-427d-a45a-38577c911aee": {
+    "asset": 1746524643441,
+    "meta": 1746524684213,
+    "relativePath": "Day1\\Bai6"
+  },
+  "60e8e3c7-0e3e-4c51-93e5-3f8a3aa81e37": {
+    "asset": 1746526659702,
+    "meta": 1746526659730,
+    "relativePath": "Day1\\Bai6\\D1_Bai6.fire"
+  },
+  "eff2dac0-c95c-48ae-a948-8b43fb21c100": {
+    "asset": 1746524832156,
+    "meta": 1746524832158,
+    "relativePath": "images"
+  },
+  "15b0fac8-c6e8-4f2d-a74d-b55c31cd6b80": {
+    "asset": 1746524856172,
+    "meta": 1746524866587,
+    "relativePath": "images\\background-main-scene.jpg"
+  },
+  "d5557b8c-b570-4716-8c62-d4219e5e2880": {
+    "asset": 1746525269716,
+    "meta": 1746525321287,
+    "relativePath": "images\\background.jpg"
+  },
+  "6aca629f-d949-4c90-8eaf-c03c439c1533": {
+    "asset": 1746526680464,
+    "meta": 1746526682547,
+    "relativePath": "scripts\\MainScript_16.js"
   }
 }
