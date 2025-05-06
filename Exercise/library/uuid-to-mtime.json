@@ -444,26 +444,6 @@
     "meta": 1746521692991,
     "relativePath": "SceneDay1"
   },
-  "89a0c6b4-7ddd-4713-9608-8febd8893e3e": {
-    "asset": 1746521853805,
-    "meta": 1746521853804,
-    "relativePath": "Day1\\D1_Bai1"
-  },
-  "5a4e02dc-01b3-46bc-bda4-bbecc39ae97c": {
-    "asset": 1746521853806,
-    "meta": 1746521853805,
-    "relativePath": "Day1\\D1_Bai2"
-  },
-  "02cd84c2-fda0-4e88-80c2-13a90551feca": {
-    "asset": 1746521853805,
-    "meta": 1746521878345,
-    "relativePath": "Day1\\D1_Bai1\\D1_Bai1.fire"
-  },
-  "b0a59578-ea45-4f5a-b201-cbc8b6960b89": {
-    "asset": 1746521853806,
-    "meta": 1746521878347,
-    "relativePath": "Day1\\D1_Bai2\\D1_Bai2.fire"
-  },
   "7e9d1b34-7c3b-427d-a45a-38577c911aee": {
     "asset": 1746526835873,
     "meta": 1746526835871,
@@ -503,5 +483,20 @@
     "asset": 1746526835875,
     "meta": 1746526966612,
     "relativePath": "images\\background.jpg"
+  },
+  "911e4a1d-5323-4e70-952d-71a2528a5184": {
+    "asset": 1746527147335,
+    "meta": 1746527152350,
+    "relativePath": "Day1\\Bai7"
+  },
+  "0a762f6a-f14b-4e3e-a560-5f91b890a758": {
+    "asset": 1746527159947,
+    "meta": 1746527164687,
+    "relativePath": "Day1\\Bai7\\D1_Bai7.fire"
+  },
+  "53674216-deef-42eb-ac35-cf00d69fe453": {
+    "asset": 1746529262236,
+    "meta": 1746529263763,
+    "relativePath": "scripts\\MainScript_17.js"
   }
 }
