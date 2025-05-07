@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "ea296ff7-cd5c-4fa3-974a-18163703ec45",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "—Pngtree—energy lightning game energy_5322872": {
+      "ver": "1.0.4",
+      "uuid": "4297cef3-8e4a-4a8b-80a5-8a2cfed6f033",
+      "rawTextureUuid": "ea296ff7-cd5c-4fa3-974a-18163703ec45",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 43,
+      "offsetY": -108.5,
+      "trimX": 352,
+      "trimY": 250,
+      "width": 583,
+      "height": 918,
+      "rawWidth": 1201,
+      "rawHeight": 1201,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
