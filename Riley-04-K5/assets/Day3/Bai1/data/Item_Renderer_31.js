@@ -16,6 +16,8 @@ cc.Class({
     },
 
     init(itemData, onClickCallback) {
+        this.itemData = itemData;
+        
         this.nameLabel.string = itemData.name;
         this.quantityLabel.string = 'x' + itemData.quantity;
         this.typeLabel.string = itemData.type;

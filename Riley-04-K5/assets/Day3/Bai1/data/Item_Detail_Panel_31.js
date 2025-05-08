@@ -19,6 +19,14 @@ cc.Class({
     },
 
     show(itemData, onDeleteCallback) {
+        if (!itemData) {
+            this.nameLabel.string = "";
+            this.typeLabel.string = "";
+            this.effectLabel.string = "";
+            this.quantityLabel.string = "";
+            this.iconSprite.spriteFrame = null;
+            return;
+        }
         this.currentItem = itemData;
         this.deleteCallback = onDeleteCallback;
 
