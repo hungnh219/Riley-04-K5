@@ -3,7 +3,7 @@ cc.Class({
 
     properties: {
         nameLabel: cc.Label,
-        // iconSprite: cc.Sprite,
+        iconSprite: cc.Sprite,
         quantityLabel: cc.Label,
         typeLabel: cc.Label,
         effectLabel: cc.Label,
@@ -21,15 +21,24 @@ cc.Class({
         this.typeLabel.string = itemData.type;
         this.effectLabel.string = itemData.effect;
 
-        // Load ảnh từ resources/images
-        // const imagePath = `images/${itemData.imageName}`;  // ví dụ: "sword" hoặc "potion"
+        const imagePath = `images/${itemData.spriteFrameName}`;
+        console.log(imagePath);
         // cc.resources.load(imagePath, cc.SpriteFrame, (err, spriteFrame) => {
+        //     console.log('check1');
         //     if (!err && spriteFrame) {
+        //         console.log('check2');
         //         this.iconSprite.spriteFrame = spriteFrame;
         //     } else {
         //         console.warn("Không load được ảnh:", imagePath, err);
         //     }
         // });
+        cc.loader.loadRes(imagePath, cc.SpriteFrame, (err, spriteFrame) => {
+            if (!err && spriteFrame) {
+                this.iconSprite.spriteFrame = spriteFrame;
+            } else {
+                console.warn("Không load được ảnh:", imagePath, err);
+            }
+        });
         
         this.node.on('click', () => {
             console.log('check', itemData);
