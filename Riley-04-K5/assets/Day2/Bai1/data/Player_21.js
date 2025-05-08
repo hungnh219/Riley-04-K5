@@ -9,7 +9,7 @@ cc.Class({
 
     onLoad () {
         this.health = 100;
-        this.attack = this.randomNumber(10, 20);
+        this.attack = this.randomNumber(30, 40);
         this.defense = this.randomNumber(5, 15);
         this.energy = 50;
 
@@ -35,36 +35,39 @@ cc.Class({
         this.updatePlayerInfo();
     },
 
-    recover() {
-        let updatedEnergy = this.energy + 20;
-
-        if (updatedEnergy > 100) updatedEnergy = 100;
-
-        this.energy = updatedEnergy;
-        this.updatePlayerInfo();
-    },
-
     updatePlayerInfo() {
         this.playerHp.string = this.health;
         this.playerEnergy.string = this.energy;
         this.playerDefence.string = this.defense;
     },
 
-    getDame() {
-        return this.attack;
-    },
-
     getHealth() {
         return this.health;
-    },
-
-    getEnergy() {
-        return this.energy;
     },
 
     skill() {
         this.energy -= 30;
         this.updatePlayerInfo();
-    }
+    },
 
+    playerAttack() {
+        // attack logic
+
+        return this.attack;
+    },
+
+    playerSkill() {
+        if (this.energy < 30) {
+            return;
+        }
+
+        this.energy -= 30;
+        this.updatePlayerInfo();
+        return this.attack * 2;
+    },
+
+    playerRecover() {
+        this.energy = this.energy + 20 > 100 ? 100 : this.energy + 20;
+        this.updatePlayerInfo();
+    }
 });
