@@ -17,7 +17,6 @@ cc.Class({
 
     // update (dt) {},
     populateList(itemList) {
-        console.log(this.content)
         for (let itemData of itemList) {
             let itemNode = cc.instantiate(this.itemPrefab);
             itemNode.parent = this.content;
@@ -41,9 +40,13 @@ cc.Class({
         if (index !== -1) {
             ItemDatabase.splice(index, 1);
         }
-    
+        
+        const detailScript = this.detailPanel.getComponent("Item_Detail_Panel_31");
+        detailScript.show(null, null);
+
         this.content.removeAllChildren();
         this.populateList(ItemDatabase);
-    }
+        
+    },
 });
 
