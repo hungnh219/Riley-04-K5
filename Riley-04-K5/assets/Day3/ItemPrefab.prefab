@@ -90,7 +90,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Sprite",
+    "_name": "icon sprite",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -606,7 +606,9 @@
     "nameLabel": {
       "__id__": 6
     },
-    "iconSprite": null,
+    "iconSprite": {
+      "__id__": 3
+    },
     "quantityLabel": {
       "__id__": 9
     },

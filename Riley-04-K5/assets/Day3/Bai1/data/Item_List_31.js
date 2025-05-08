@@ -31,7 +31,19 @@ cc.Class({
         const detailScript = this.detailPanel.getComponent("Item_Detail_Panel_31");
         console.log('detailscript', detailScript);
         console.log(this.detailPanel);
-        detailScript.show(itemData);
+        detailScript.show(itemData, () => {
+            this.removeItem(itemData); // callback khi bấm XÓA
+        });
     },
+
+    removeItem(itemToRemove) {
+        const index = ItemDatabase.indexOf(itemToRemove);
+        if (index !== -1) {
+            ItemDatabase.splice(index, 1);
+        }
+    
+        this.content.removeAllChildren();
+        this.populateList(ItemDatabase);
+    }
 });
 
