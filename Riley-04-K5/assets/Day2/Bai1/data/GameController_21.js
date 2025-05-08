@@ -36,6 +36,28 @@ cc.Class({
         this.winCheck();
     },
 
+    playerSkill() {
+        // attack logic
+        if (this.player.getEnergy() >= 30) {
+            this.turn = Turn.Enemy;
+            this.updateTurn();
+            this.player.skill();
+            this.enemy.attacked(this.player.getDame() * 2);
+            this.enemyAttack();
+            this.winCheck();
+        }
+    },
+
+    playerRecover() {
+        // attack logic
+        this.turn = Turn.Enemy;
+        this.updateTurn();
+        // this.enemy.attacked(this.player.getDame());
+        this.player.recover();
+        this.enemyAttack();
+        this.winCheck();
+    },
+
     enemyAttack() {
         setTimeout(() => {
             console.log('check');

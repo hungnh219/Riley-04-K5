@@ -35,6 +35,15 @@ cc.Class({
         this.updatePlayerInfo();
     },
 
+    recover() {
+        let updatedEnergy = this.energy + 20;
+
+        if (updatedEnergy > 100) updatedEnergy = 100;
+
+        this.energy = updatedEnergy;
+        this.updatePlayerInfo();
+    },
+
     updatePlayerInfo() {
         this.playerHp.string = this.health;
         this.playerEnergy.string = this.energy;
@@ -47,6 +56,15 @@ cc.Class({
 
     getHealth() {
         return this.health;
+    },
+
+    getEnergy() {
+        return this.energy;
+    },
+
+    skill() {
+        this.energy -= 30;
+        this.updatePlayerInfo();
     }
 
 });
