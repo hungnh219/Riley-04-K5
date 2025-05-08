@@ -27,24 +27,28 @@ cc.Class({
     update (dt) {},
 
     playerAttack() {
-        // attack logic
-        console.log('player attack')
+        let playerDame = this.player.playerAttack();
+        this.enemy.attacked(playerDame);
+
+        this.winCheck();
         this.turn = Turn.Enemy;
         this.updateTurn();
-        this.enemy.attacked(this.player.getDame());
+        // this.enemy.updateEnemyInfo();
         this.enemyAttack();
-        this.winCheck();
     },
 
     playerSkill() {
-        // attack logic
-        if (this.player.getEnergy() >= 30) {
+        let playerDame = this.player.playerSkill();
+        console.log(playerDame);
+        console.log(typeof playerDame);
+        if (!isNaN(playerDame)) {
+            console.log('check');
+            this.enemy.attacked(playerDame);
+
+            this.winCheck();
             this.turn = Turn.Enemy;
             this.updateTurn();
-            this.player.skill();
-            this.enemy.attacked(this.player.getDame() * 2);
             this.enemyAttack();
-            this.winCheck();
         }
     },
 
@@ -52,19 +56,20 @@ cc.Class({
         // attack logic
         this.turn = Turn.Enemy;
         this.updateTurn();
-        // this.enemy.attacked(this.player.getDame());
-        this.player.recover();
+        this.player.playerRecover();
         this.enemyAttack();
         this.winCheck();
     },
 
     enemyAttack() {
         setTimeout(() => {
-            console.log('check');
-            this.turn = Turn.Player;
-            this.player.attacked(this.enemy.getDame());
-            this.updateTurn();
+            // console.log('check');    
+            let enemyDame = this.enemy.enemyAttack();
+            this.player.attacked(enemyDame);
+
             this.winCheck();
+            this.turn = Turn.Player;
+            this.updateTurn();
         }, 1500)    
     },
 
@@ -88,8 +93,4 @@ cc.Class({
             this.winnerNotification.string = "Noob!"
         }
     }
-
-
-
-
 });

@@ -8,7 +8,7 @@ cc.Class({
 
     onLoad () {
         this.health = 100;
-        this.attack = this.randomNumber(10, 20);
+        this.attack = this.randomNumber(30, 40);
         this.defense = this.randomNumber(5, 15);
         this.energy = 50;
 
@@ -38,11 +38,17 @@ cc.Class({
         this.enemyDefence.string = this.defense;
     },
 
-    getDame() {
-        return this.attack;
-    },
+    // getDame() {
+    //     return this.attack;
+    // },
 
     getHealth() {
         return this.health;
+    },
+
+    enemyAttack() {
+        // attack logic
+
+        return this.attack;
     }
 });
