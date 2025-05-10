@@ -1,0 +1,39 @@
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        swordPrefab: cc.Prefab,
+        shieldPrefab: cc.Prefab,
+        healthPotionPrefab: cc.Prefab,
+        manaPotionPrefab: cc.Prefab,
+        flowerPrefab: cc.Prefab,
+        stonePrefab: cc.Prefab,
+    },
+
+    // onLoad () {},
+
+    start () {
+
+    },
+
+    // update (dt) {},
+    getPrefabByType(itemType) {
+        switch (itemType) {
+            case "sword":
+                return this.swordPrefab;
+            case "shield":
+                return this.shieldPrefab;
+            case "health_potion":
+                return this.healthPotionPrefab;
+            case "mana_potion":
+                return this.manaPotionPrefab;
+            case "flower":
+                return this.flowerPrefab;
+            case "stone":
+                return this.stonePrefab;
+            default:
+                console.warn("Unknown item type:", itemType);
+                return null;
+        }
+    }
+});
