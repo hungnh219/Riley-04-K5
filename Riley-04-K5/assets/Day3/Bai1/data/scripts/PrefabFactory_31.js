@@ -8,6 +8,7 @@ cc.Class({
         manaPotionPrefab: cc.Prefab,
         flowerPrefab: cc.Prefab,
         stonePrefab: cc.Prefab,
+        emptyItemPrefab: cc.Prefab,
     },
 
     // onLoad () {},
@@ -33,7 +34,7 @@ cc.Class({
                 return this.stonePrefab;
             default:
                 console.warn("Unknown item type:", itemType);
-                return null;
+                return this.emptyItemPrefab;
         }
     }
 });
