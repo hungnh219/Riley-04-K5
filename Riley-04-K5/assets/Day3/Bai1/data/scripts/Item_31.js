@@ -15,6 +15,10 @@ cc.Class({
         this.currentItem = null;
 
         this.quantity = 0;
+
+        this.node.on(cc.Node.EventType.TOUCH_END, () => {
+            this.itemClickCallBack();
+        }, this);
     },
 
     start () {
@@ -26,7 +30,7 @@ cc.Class({
 
     },
 
-    initData(data, itemClickCallBack) {
+    initData(data, controllerNode) {
         this.name = data.name;
         this.quantity = data.quantity;
         this.effect = data.effect;
@@ -36,10 +40,14 @@ cc.Class({
         this.typeLabel.string =  this.type;
         this.effectLabel.string = this.effect;
 
+        this.currentItem = data;
         // optimize cho nay
-        this.node.on('click', () => {
-            itemClickCallBack(this.getData());
-        }, this)
+        // this.node.on('click', () => {
+        //     itemClickCallBack(this.getData());
+        // }, this)
+
+        this.controllerNode = controllerNode;
+        console.log("controllerNode: ", this.controllerNode.name);
     },
 
     getData() {
@@ -61,9 +69,7 @@ cc.Class({
 
     useItem() {
         console.log('use');
-        // this.quantity--;
-        // this.quantityLabel.string = this.quantity;
-        // this.destroy();
+
         if (this.type == ItemType.ItemUsageType.CONSUMABLE) {
             if (this.quantity != 1) {
                 this.quantity--;
@@ -86,6 +92,10 @@ cc.Class({
 
     getItemUsageType() {
         return this.type;
+    },
+
+    itemClickCallBack () {
+        this.controllerNode.emit("item-click", this.getData());
     }
 
 
