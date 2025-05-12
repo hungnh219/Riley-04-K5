@@ -12,30 +12,46 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        nameLabel: cc.Label,
+        typeLabel: cc.Label,
+        imageSprite: cc.Sprite,
+        effectLabel: cc.Label,
+        quantityLabel: cc.Label,
+
+        useButton: cc.Button,
+        deleteButton: cc.Button,
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
+    onLoad () {
+        this.useButton.node.active = false;
+        this.deleteButton.node.active = false;
+    },
 
     start () {
 
     },
 
     // update (dt) {},
+    clear() {
+        this.nameLabel.string = "";
+        this.typeLabel.string = "";
+        this.imageSprite.node.active = false;
+        this.effectLabel.string = "";
+        this.quantityLabel.string = "";
+
+        this.useButton.node.active = false;
+        this.deleteButton.node.active = false;
+    },
+
+    show(itemData) {
+        this.imageSprite.node.active = true;
+        this.useButton.node.active = true;
+        this.deleteButton.node.active = true;
+
+        this.nameLabel.string = itemData.name;
+        this.typeLabel.string = itemData.type;
+        this.imageSprite.spriteFrame = itemData.spriteFrame;
+        this.effectLabel.string = itemData.effect;
+        this.quantityLabel.string = itemData.quantity;
+    }
 });

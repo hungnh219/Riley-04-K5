@@ -33,8 +33,19 @@ cc.Class({
             case "stone":
                 return this.stonePrefab;
             default:
-                console.warn("Unknown item type:", itemType);
                 return this.emptyItemPrefab;
         }
+    },
+
+    getAllPrefabs() {
+        return [
+            this.swordPrefab,
+            this.shieldPrefab,
+            this.healthPotionPrefab,
+            this.manaPotionPrefab,
+            this.flowerPrefab,
+            this.stonePrefab,
+            this.emptyItemPrefab,
+        ]
     }
 });

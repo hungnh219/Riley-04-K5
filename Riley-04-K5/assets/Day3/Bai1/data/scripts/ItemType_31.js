@@ -1,4 +1,4 @@
-export const ItemType = {
+const ItemType = {
     SWORD: 'sword',
     SHIELD: 'shield',
     HEALTH_POTION: 'health_potion',
@@ -7,7 +7,9 @@ export const ItemType = {
     FLOWER: 'flower',
 };
 
-export const ItemUsageType = {
+const ItemUsageType = {
     CONSUMABLE: 'consumable',
     EQUIPMENT: 'equipment',
 };
+
+export default {ItemType, ItemUsageType};

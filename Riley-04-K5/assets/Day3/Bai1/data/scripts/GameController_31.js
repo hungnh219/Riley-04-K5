@@ -1,47 +1,89 @@
+import ItemDatabase from "./ItemDb_31";
+import ItemType from "./ItemType_31";
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        itemScrollViewContent: cc.Node,
+        itemDetailPanel: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        this.shownNode = null;
+    },
 
     start () {
-
+        this.populateList(ItemDatabase);
     },
 
     // update (dt) {},
     populateList(itemList) {
         const itemFactory = this.node.getComponent("PrefabFactory_31");
+
         if (!itemFactory) {
             console.error("Item not found!!!");
             return;
         }
         itemList.forEach((itemData) => {
-            const prefab = itemFactory.getPrefabByType(itemData.type);
-            if (prefab) {
-                const itemNode = cc.instantiate(prefab);
-                this.content.addChild(itemNode);
+            const itemPrefab = itemFactory.getPrefabByType(itemData.type);
 
-                // initialize the item
+            if (itemPrefab) {
+                const itemNode = cc.instantiate(itemPrefab);
+                this.itemScrollViewContent.addChild(itemNode);
+
+                const itemPrefabScript = itemNode.getComponent("Item_31");
+                itemPrefabScript.initData(itemData, this.handleItemClick.bind(this));
             }
         });
     },
+
+    handleItemClick(data) {
+        console.log("check item click", data)
+        this.itemData = data;
+        this.shownNode = data.node;
+
+        const itemDetailPanelScript =  this.itemDetailPanel.getComponent("ItemDetailPanel_31");
+        itemDetailPanelScript.show(this.itemData);
+    },
+
+    handleUse() {
+        const itemDetailPanelScript = this.itemDetailPanel.getComponent("ItemDetailPanel_31");
+
+        this.itemScrollViewContent.children.forEach((item) => {
+            const itemPrefabScript = item.getComponent("Item_31");
+            if (item == this.shownNode) {
+                    itemPrefabScript.useItem();
+
+                    this.itemData.quantity--;
+                    if (this.itemData.quantity == 0 || this.itemData.type == ItemType.ItemUsageType.EQUIPMENT) {
+                        itemDetailPanelScript.clear();
+                    } else {
+                        itemDetailPanelScript.show(this.itemData);
+                    }
+                }
+            }
+        )
+    },
+
+    onSearchChanged(value) {
+        // debounce
+        this.scheduleOnce(() => {
+            this.itemScrollViewContent.children.forEach((item) => {
+                const itemPrefabScript = item.getComponent("Item_31");
+
+                if (itemPrefabScript.checkSearchWord(value)) {
+                    item.active = true;
+                } else {
+                    item.active = false;
+                }
+            })
+        }, 0.5)
+    }
+
+
+
+
 });
