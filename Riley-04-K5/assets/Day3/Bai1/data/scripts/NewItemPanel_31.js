@@ -15,19 +15,23 @@ cc.Class({
         this.prefabs = this.prefabFactory.getAllPrefabs();
 
         console.log("prefab 0: ", this.prefabs[0])
-        console.log("prefab 0: ", this.prefabs[0].Component)
-        console.log("prefab 0 children: ", this.prefabs)
-        // let itemNode = cc.instantiate(this.prefabs[0]);
-        this.prefabs[0].parent = this.node;
 
-        let icon = this.prefabs[0].getChildByName("IconImageSprite");
-        // let sprite = icon.getComponent(cc.Sprite);
+        const itemNode = cc.instantiate(this.prefabs[0]);
 
-        let sprite = this.prefabs[0].getComponent(cc.Sprite);
-        console.log(sprite, icon)
+        console.log("prefab 0 node: ", itemNode)
+        // console.log("image label: ", itemNode.getChildByName("ItemImageLabel"))
+        console.log("children: ", itemNode.children.getChildByName("ItemImageLabel"))
+
+        itemNode.children.forEach(element => {
+            element.name;
+            console.log('test ', element.name)
+        });
+
     },
 
     start () {
+        console.log(this.prefabs[0].children)
+
     },
 
     // update (dt) {},
