@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "FlowerPrefab",
+    "_name": "SwordPrefab",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -112,7 +112,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 97.87,
+      "width": 33.34,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -158,8 +158,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Label",
-    "_N$string": "Label",
+    "_string": "...",
+    "_N$string": "...",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -180,7 +180,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
     "fileId": "a9TAjnQxxKsrpaoPIR/8NK",
     "sync": false
@@ -213,7 +213,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 97.87,
+      "width": 22.25,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -259,8 +259,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Label",
-    "_N$string": "Label",
+    "_string": "0",
+    "_N$string": "0",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -281,7 +281,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
     "fileId": "c7muV5ZbxGlKU3meetRi2E",
     "sync": false
@@ -314,7 +314,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 97.87,
+      "width": 33.34,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -360,8 +360,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Label",
-    "_N$string": "Label",
+    "_string": "...",
+    "_N$string": "...",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -382,7 +382,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
     "fileId": "61D31KQpVGKK6wdz6B+L9m",
     "sync": false
@@ -485,7 +485,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
     "fileId": "4auu4Bf5hL+LIUvBzpAqj4",
     "sync": false
@@ -518,7 +518,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 97.87,
+      "width": 33.34,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -564,8 +564,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Label",
-    "_N$string": "Label",
+    "_string": "...",
+    "_N$string": "...",
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -586,7 +586,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
     "fileId": "58Rqv1qjBPC49hfdk8TMD4",
     "sync": false
@@ -682,9 +682,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
-    "fileId": "2fMNLHE99FYJ1dgimJZXrn",
+    "fileId": "a6N1ArFrxD7qQ3cVV3DZDD",
     "sync": false
   },
   {
@@ -693,7 +693,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c1f9fc9c-8d30-44ad-b022-e1aacaf10b72"
+      "__uuid__": "4d74a027-8ccd-4a3b-95c0-c02bb320cb3c"
     },
     "fileId": "84rIBAsadJF7ksKYEv5Mq0",
     "sync": false
