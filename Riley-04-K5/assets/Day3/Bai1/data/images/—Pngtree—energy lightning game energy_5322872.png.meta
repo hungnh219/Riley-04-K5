@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "ea296ff7-cd5c-4fa3-974a-18163703ec45",
+  "uuid": "3ff33129-d450-450d-81d3-db1945da56e7",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "—Pngtree—energy lightning game energy_5322872": {
       "ver": "1.0.4",
-      "uuid": "4297cef3-8e4a-4a8b-80a5-8a2cfed6f033",
-      "rawTextureUuid": "ea296ff7-cd5c-4fa3-974a-18163703ec45",
+      "uuid": "2a3801c5-7304-4ff2-aee9-8a006161eaeb",
+      "rawTextureUuid": "3ff33129-d450-450d-81d3-db1945da56e7",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
