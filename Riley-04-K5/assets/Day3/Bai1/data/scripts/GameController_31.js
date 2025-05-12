@@ -13,6 +13,8 @@ cc.Class({
 
     onLoad () {
         this.shownNode = null;
+
+        this.node.on("item-click", this.itemClick, this);
     },
 
     start () {
@@ -35,12 +37,12 @@ cc.Class({
                 this.itemScrollViewContent.addChild(itemNode);
 
                 const itemPrefabScript = itemNode.getComponent("Item_31");
-                itemPrefabScript.initData(itemData, this.handleItemClick.bind(this));
+                itemPrefabScript.initData(itemData, this.node);
             }
         });
     },
 
-    handleItemClick(data) {
+    itemClick(data) {
         console.log("check item click", data)
         this.itemData = data;
         this.shownNode = data.node;
@@ -54,6 +56,7 @@ cc.Class({
 
         this.itemScrollViewContent.children.forEach((item) => {
             const itemPrefabScript = item.getComponent("Item_31");
+
             if (item == this.shownNode) {
                     itemPrefabScript.useItem();
 
@@ -81,9 +84,10 @@ cc.Class({
                 }
             })
         }, 0.5)
+    },
+
+    onDestroy() {
+        this.node.off("item-click", this.itemClick.bind(this), this);
     }
-
-
-
 
 });

@@ -29,36 +29,40 @@ cc.Class({
 
         this.prefabs.forEach((prefab) => {
             const itemNode = cc.instantiate(prefab);
-
-            const imageSprite = itemNode.getChildByName('ItemImageSprite').getComponent(cc.Sprite);
+            const imageSprite = itemNode.getChildByName('ItemImageSprite')?.getComponent(cc.Sprite);
 
             if (!imageSprite) {
                 console.warn("ItemImageSprite not found in prefab:", prefab.name);
                 return;
             }
 
-            // create node to display sprite
+            // Tạo node ảnh mới để hiển thị sprite
             const spriteNode = new cc.Node();
             const spriteComponent = spriteNode.addComponent(cc.Sprite);
             spriteComponent.spriteFrame = imageSprite.spriteFrame;
             spriteComponent.sizeMode = cc.Sprite.SizeMode.CUSTOM;
 
+            // Resize và căn giữa
             spriteNode.setContentSize(80, 80);
             spriteNode.anchorX = 0.5;
             spriteNode.anchorY = 0.5;
 
+            // ✅ Gán sự kiện click
             spriteNode.on('touchend', () => {
+                console.log("Clicked prefab:", prefab.name);
                 this.onSpriteClicked(prefab);
             }, this);
 
+            // Thêm vào scroll view
             this.scrollViewContent.addChild(spriteNode);
         });
     },
-  
 
-    onSpriteClicked(prefab) {
-        console.log("Sprite clicked:", prefab.name);
-    },
+    // onSpriteClicked(prefab) {
+    //     console.log("Sprite clicked:", prefab.name);
+    //     // Thực hiện hành động khi sprite được click
+    //     // Ví dụ: hiển thị thông tin chi tiết về item
+    // },
 
     // update (dt) {},
 });

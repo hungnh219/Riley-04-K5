@@ -626,8 +626,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 80,
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -636,8 +636,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -480,
-      "y": -320,
+      "x": -1.463,
+      "y": 2.925,
       "z": 0
     },
     "_scale": {
@@ -726,7 +726,7 @@
     "node": {
       "__id__": 1
     },
-    "_enabled": true,
+    "_enabled": false,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
@@ -793,10 +793,12 @@
   },
   {
     "__type__": "cc.ClickEvent",
-    "target": null,
+    "target": {
+      "__id__": 17
+    },
     "component": "",
     "_componentId": "d51f68IcfJGdbKL8bSKjFoN",
-    "handler": "onclick",
+    "handler": "itemClickCallBack",
     "customEventData": ""
   },
   {
