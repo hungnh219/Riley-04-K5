@@ -53,7 +53,7 @@ cc.Class({
             this.flowerPrefab,
             this.stonePrefab,
             this.emptyItemPrefab,
-            this.sword1Prefab,
+            // this.sword1Prefab,
         ]
     }
 });

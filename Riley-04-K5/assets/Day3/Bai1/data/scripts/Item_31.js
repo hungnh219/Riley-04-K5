@@ -83,7 +83,8 @@ cc.Class({
     },
 
     deleteItem() {
-
+        console.log('delete');
+        this.node.destroy();
     },
 
     checkSearchWord(word) {

@@ -18,15 +18,10 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        if (this.pageView.getCurrentPageIndex() === 0) {
-            console.log('hehe');
-        }
-        if (this.pageView.getCurrentPageIndex() === 1) {
-            let newItemPanel = this.node.getComponent('NewItemPanel_31');
-            if (newItemPanel && typeof newItemPanel.initData === 'function') {
-                newItemPanel.initData();
-            }
-        }
+        // this.pageView.node.on('page-turning', this.onPageTurned, this);
+
+        // // Gọi lần đầu khi load scene
+        // this.togglePageActive(this.pageView.getCurrentPageIndex());
     },
 
     start () {
@@ -34,4 +29,21 @@ cc.Class({
     },
 
     // update (dt) {},
+    onPageTurned() {
+        const currentIndex = this.pageView.getCurrentPageIndex();
+        this.togglePageActive(currentIndex);
+        console.log("Page turned to index:", currentIndex);
+    },
+
+    togglePageActive(currentIndex) {
+        const pages = this.pageView.getPages();
+
+        pages.forEach((page, index) => {
+            if (index == currentIndex) {
+                page.active = true;
+            } else {
+                page.active = false;
+            }
+        });
+    }
 });

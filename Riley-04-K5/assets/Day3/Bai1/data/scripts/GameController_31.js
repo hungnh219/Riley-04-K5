@@ -7,6 +7,8 @@ cc.Class({
     properties: {
         itemScrollViewContent: cc.Node,
         itemDetailPanel: cc.Node,
+        newItemPanel: cc.Node,
+        itemSlots: [cc.Node]
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -15,6 +17,8 @@ cc.Class({
         this.shownNode = null;
 
         this.node.on("item-click", this.itemClick, this);
+
+        this.handleDragAndDrop();
     },
 
     start () {
@@ -69,6 +73,37 @@ cc.Class({
                 }
             }
         )
+    },
+
+    handleDelete() {
+        const itemDetailPanelScript = this.itemDetailPanel.getComponent("ItemDetailPanel_31");
+
+        this.itemScrollViewContent.children.forEach((item) => {
+            const itemPrefabScript = item.getComponent("Item_31");
+
+            if (item == this.shownNode) {
+                itemPrefabScript.deleteItem();
+                itemDetailPanelScript.clear();
+            }
+        })
+    },
+
+    handleAddItem() {
+        const newItemPanelScript = this.newItemPanel.getComponent("NewItemPanel_31");
+
+        const newNode = newItemPanelScript.getClickedItem().node;
+        const newItemData = newItemPanelScript.getClickedItem().data;
+
+        this.itemScrollViewContent.addChild(newNode);
+
+        const itemPrefabScript = newNode.getComponent("Item_31");
+        itemPrefabScript.initData(newItemData, this.node);
+        console.log("newNode", newNode, newItemData);
+    
+    },
+
+    handleDragAndDrop() {
+       
     },
 
     onSearchChanged(value) {
