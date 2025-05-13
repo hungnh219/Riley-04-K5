@@ -95,7 +95,9 @@ cc.Class({
     },
 
     itemClickCallBack () {
+        console.log('???')
         this.controllerNode.emit("item-click", this.getData());
+        console.log(this.getData())
     }
 
 
