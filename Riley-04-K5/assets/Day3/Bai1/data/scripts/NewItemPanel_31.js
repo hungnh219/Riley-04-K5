@@ -19,7 +19,6 @@ cc.Class({
     },
 
     start () {
-        console.log(this.prefabs);
         this.initData();
     },
 
@@ -30,7 +29,8 @@ cc.Class({
         this.prefabs.forEach((prefab) => {
             const itemNode = cc.instantiate(prefab);
 
-            const imageSprite = itemNode.getChildByName('ItemImageSprite').getComponent(cc.Sprite);
+            const imageSpriteChild = itemNode.getChildByName('ItemImageSprite').getComponent(cc.Sprite);
+            const imageSprite = imageSpriteChild.getComponent(cc.Sprite);
 
             if (!imageSprite) {
                 console.warn("ItemImageSprite not found in prefab:", prefab.name);

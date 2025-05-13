@@ -31,7 +31,7 @@ cc.Class({
         }
         itemList.forEach((itemData) => {
             const itemPrefab = itemFactory.getPrefabByType(itemData.type);
-
+            
             if (itemPrefab) {
                 const itemNode = cc.instantiate(itemPrefab);
                 this.itemScrollViewContent.addChild(itemNode);

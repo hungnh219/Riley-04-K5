@@ -9,6 +9,7 @@ cc.Class({
         flowerPrefab: cc.Prefab,
         stonePrefab: cc.Prefab,
         emptyItemPrefab: cc.Prefab,
+        // sword1Prefab: cc.Prefab,
     },
 
     // onLoad () {},
@@ -19,6 +20,7 @@ cc.Class({
 
     // update (dt) {},
     getPrefabByType(itemType) {
+        console.log('check', itemType)
         switch (itemType) {
             case "sword":
                 return this.swordPrefab;
@@ -32,6 +34,11 @@ cc.Class({
                 return this.flowerPrefab;
             case "stone":
                 return this.stonePrefab;
+            // case "sword1": {
+            //     console.log('this prefab', this.sword1Prefab);
+            //     return this.sword1Prefab;
+            // }
+                
             default:
                 return this.emptyItemPrefab;
         }
@@ -46,6 +53,7 @@ cc.Class({
             this.flowerPrefab,
             this.stonePrefab,
             this.emptyItemPrefab,
+            this.sword1Prefab,
         ]
     }
 });

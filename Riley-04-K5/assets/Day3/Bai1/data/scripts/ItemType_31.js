@@ -5,6 +5,7 @@ const ItemType = {
     MANA_POTION: 'mana_potion',
     STONE: 'stone',
     FLOWER: 'flower',
+    // SWORD1: 'sword1',
 };
 
 const ItemUsageType = {
