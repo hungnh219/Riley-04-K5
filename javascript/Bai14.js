@@ -35,11 +35,21 @@ let asyncFuncs = [
 ]
 
 function callbackManager(asyncFuncs) {
-    asyncFuncs.reduce((chain, func) => {
-        return chain.then(() => func().then(result => {
-            console.log("Result:", result);
-        }));
-    }, Promise.resolve());
+    // asyncFuncs.reduce((chain, func) => {
+    //     return chain.then(() => func().then(result => {
+    //         console.log("Result:", result);
+    //     }));
+    // }, Promise.resolve());
+    let results = [];
+    let promises = asyncFuncs.map((func, index) => {
+        return func().then(result => {
+            results[index] = result;
+        });
+    });
+
+    Promise.all(promises).then(() => {
+        console.log("Results:", results);
+    });
 }
 
 callbackManager(asyncFuncs);

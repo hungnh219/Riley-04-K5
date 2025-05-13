@@ -34,40 +34,12 @@ let asyncFuncs = [
     asyncFunc3,
 ]
 
-// function callbackManager(asyncFuncs) {
-//     let results = [];
-
-//     async function executeAsyncFunctions() {
-//         for (let i = 0; i < asyncFuncs.length; i++) {
-//             if (typeof asyncFuncs[i] == 'function') {
-//                 const result = await asyncFuncs[i]();
-//                 results.push(result);
-//             } else {
-//                 console.error("error");
-//             }
-//         }
-//         console.log(results);
-//     }
-
-//     executeAsyncFunctions();
-// }
-
 function callbackManager(asyncFuncs) {
-    async function executeAsyncFunctions() {
-        const results = await asyncFuncs.reduce(async (accPromise, func) => {
-            const acc = await accPromise;
-            if (typeof func === 'function') {
-                const result = await func();
-                acc.push(result);
-            } else {
-                console.error("error");
-            }
-            return acc;
-        }, Promise.resolve([]));
-        console.log(results);
-    }
-
-    executeAsyncFunctions();
+    asyncFuncs.reduce((chain, func) => {
+        return chain.then(() => func().then(result => {
+            console.log("Result:", result);
+        }));
+    }, Promise.resolve());
 }
 
 callbackManager(asyncFuncs);
