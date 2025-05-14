@@ -1,3 +1,4 @@
+// viet them 1 ham thu 4, throw error, them ham vao giua arr, khi gap ham loi, xoa ra khoi array va chay lai
 async function asyncFunc1(callback) {
     console.log("Started asyncFunc1");
 

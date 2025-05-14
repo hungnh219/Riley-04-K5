@@ -34,37 +34,56 @@ let asyncFuncs = [
 function callbackManager(asyncFuncs) {
     let results = [];
 
+    function promiseRecursive(promise, asyncFuncs, index) {
+        if (index == asyncFuncs.length) {
+            console.log(results);
+            return;
+        };
 
+        promise = new Promise(async (resolve) => {
+            await asyncFuncs[index](resolve);
+        })
+
+        promise.then((result) => {
+            console.log(index + " " + result);
+            results.push(result);
+
+            index++;
+            promiseRecursive(promise, asyncFuncs, index);
+        })
+    }
+
+    promiseRecursive(null, asyncFuncs, 0);
     // optimize: su dung vong lap
-    let asyncFunc1Promise = new Promise(async (resolve) => {
-        await asyncFuncs[0](resolve);
-    })
+    // let asyncFunc1Promise = new Promise(async (resolve) => {
+    //     await asyncFuncs[0](resolve);
+    // })
 
-    asyncFunc1Promise.then(
-        (result1) => {
-            results.push(result1);
+    // asyncFunc1Promise.then(
+    //     (result1) => {
+    //         results.push(result1);
 
-            let asyncFunc2Promise = new Promise(async (resolve) => {
-                await asyncFuncs[1](resolve);
-            })
-            asyncFunc2Promise.then(
-                (result2) => {
-                    results.push(result2);
+    //         let asyncFunc2Promise = new Promise(async (resolve) => {
+    //             await asyncFuncs[1](resolve);
+    //         })
+    //         asyncFunc2Promise.then(
+    //             (result2) => {
+    //                 results.push(result2);
 
-                    let asyncFunc3Promise = new Promise(async (resolve) => {
-                        await asyncFuncs[2](resolve);
-                    })
-                    asyncFunc3Promise.then(
-                        (result3) => {
-                            results.push(result3);
-                            console.log(results);
-                            // return results;
-                        }
-                    )
-                }
-            )
-        }
-    )
+    //                 let asyncFunc3Promise = new Promise(async (resolve) => {
+    //                     await asyncFuncs[2](resolve);
+    //                 })
+    //                 asyncFunc3Promise.then(
+    //                     (result3) => {
+    //                         results.push(result3);
+    //                         console.log(results);
+    //                         // return results;
+    //                     }
+    //                 )
+    //             }
+    //         )
+    //     }
+    // )
 }
 
 callbackManager(asyncFuncs);

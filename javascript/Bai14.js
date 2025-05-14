@@ -34,22 +34,34 @@ let asyncFuncs = [
     asyncFunc3,
 ]
 
-function callbackManager(asyncFuncs) {
+function callbackManagerGPT(asyncFuncs) {
     // asyncFuncs.reduce((chain, func) => {
     //     return chain.then(() => func().then(result => {
     //         console.log("Result:", result);
     //     }));
     // }, Promise.resolve());
-    let results = [];
-    let promises = asyncFuncs.map((func, index) => {
-        return func().then(result => {
-            results[index] = result;
-        });
-    });
 
-    Promise.all(promises).then(() => {
-        console.log("Results:", results);
-    });
+
+    // let results = [];
+    // let promises = asyncFuncs.map((func, index) => {
+    //     return func().then(result => {
+    //         results[index] = result;
+    //     });
+    // });
+
+    // Promise.all(promises).then(() => {
+    //     console.log("Results:", results);
+    // });
+}
+
+function callbackManager(asyncFuncs) {
+    // let results = [];
+    asyncFuncs.reduce((results, curAsyncFunc, index) => {
+        curAsyncFunc().then((result) => {
+            results[index] = result
+        })
+        return results;
+    }, [])
 }
 
 callbackManager(asyncFuncs);

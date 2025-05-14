@@ -32,11 +32,22 @@ let asyncFuncs = [
 ]
 
 async function callbackManager(asyncFuncs) {
-    await asyncFuncs[0](async () => {
-        await asyncFuncs[1](async () => {
-            await asyncFuncs[2](() => {});
-        });
-    });
+    // await asyncFuncs[0](async () => {
+    //     await asyncFuncs[1](async () => {
+    //         await asyncFuncs[2](() => {});
+    //     });
+    // });
+
+    async function asyncFuncRecursive(asyncFuncs, index) {
+        if (index == asyncFuncs.length) return;
+
+        await asyncFuncs[index](() => {
+            index++;
+            asyncFuncRecursive(asyncFuncs, index);
+        })
+    }   
+
+    asyncFuncRecursive(asyncFuncs, 0);
 }
 
 callbackManager(asyncFuncs);

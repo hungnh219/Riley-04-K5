@@ -1,3 +1,6 @@
+// them ham add (console string) vao thoi diem 300 (thoi diem bat ky), goi ham add
+// addFunction(callback, time) -> "callback" la ham se duoc goi vao dung thoi gian "time"
+
 function timer(start, step) {
     // function startTimer() {
     //     console.log('start');
@@ -26,6 +29,11 @@ function timer(start, step) {
         console.log('end');
         isRunning = false;
     }
+
+    function addFunction() {
+
+    }
+    
     return {
         startTimer: () => handleStartTimer(start, step),
 
