@@ -21,11 +21,12 @@ cc.Class({
     },
 
     async start () {
-        this.safeApiCall = await this.circuitBreaker(this.fakeCallApi, 3, 3000);
+        this.safeApiCall = await this.circuitBreaker(this.fakeCallApi, 3, 15000);
     },
 
     fakeCallApi() {
-        const delay = Math.random() < 0.5 ? 1000 : 5000;
+        let random = Math.random();
+        let delay = random < 0.5 ? 1000 : 5000;
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 let random = Math.random();
@@ -52,7 +53,7 @@ cc.Class({
                 label.fontSize = 20;
                 this.logCallApiScrollViewContent.addChild(logNode);
 
-                console.log("✅", result);
+                console.log("✅", result, i);
 
                 this.initData();
             } catch (error) {
@@ -111,15 +112,21 @@ cc.Class({
     },
 
     // update (dt) {},
-    circuitBreaker(fn, timeoutThreshold, resetTimeout) {
+    circuitBreaker(fn, callThreshold, resetTimeout) {
         let state = "CLOSED"; // CLOSED, OPEN
         let lastFailureTime = 0;
         let failureCount = 0;
 
+        console.log("callThreshold", callThreshold);
+        console.log("state", state);
+
         return async (...args) => {
+            console.log("state 123", state);
+
             const now = Date.now();
 
             if (state == "OPEN") {
+                // return;
                 const timeSinceLastFailure = now - lastFailureTime;
                 console.log("Time since last failure:", timeSinceLastFailure);
                 if (timeSinceLastFailure > resetTimeout) {
@@ -134,17 +141,18 @@ cc.Class({
             try {
                 const result = await Promise.race([
                     fn(...args),
-                    new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), timeoutThreshold))
+                    new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), resetTimeout))
                 ]);
 
-                failureCount = 0;
-                state = "CLOSED";
+                // failureCount = 0;
+                // state = "CLOSED";
                 return result;
             } catch (e) {
                 failureCount++;
+                console.log("failureCount", failureCount)
                 console.error("⚠️ Circuit Breaker Error:", e.message);
                 lastFailureTime = Date.now();
-                if (failureCount >= timeoutThreshold) {
+                if (failureCount >= callThreshold) {
                     state = "OPEN";
                     console.warn("Circuit is OPEN due to multiple failures.");
                 } else {

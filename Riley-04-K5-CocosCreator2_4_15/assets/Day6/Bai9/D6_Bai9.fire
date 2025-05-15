@@ -58,7 +58,7 @@
     "_groupIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "9f923d87-aaa8-4b12-8452-0f2f7a4822f7"
+    "_id": "0468e912-a40f-4430-a694-839012abd291"
   },
   {
     "__type__": "cc.Node",
@@ -134,7 +134,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "LogPromise",
+    "_name": "CircuitBreaker",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -192,17 +192,18 @@
     "_is3DNode": false,
     "_groupIndex": 0,
     "groupIndex": 0,
-    "_id": "153aW5MqFC0az70vUecCc1"
+    "_id": "e9gyCA8ihFwqK7X20yI8nz"
   },
   {
-    "__type__": "46b9fyENRREvr5ZWjq2eJ+K",
+    "__type__": "da1a5unL65JF7DH0Woxrs62",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 3
     },
     "_enabled": true,
-    "_id": "f8kCxmHUpKnLJ/0DRHNkga"
+    "logLabel": null,
+    "_id": "81fN33JfBIqL7/CSLelAYz"
   },
   {
     "__type__": "cc.Node",
