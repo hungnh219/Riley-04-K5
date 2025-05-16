@@ -1,6 +1,10 @@
 {
   "ver": "1.1.3",
+<<<<<<< HEAD
   "uuid": "0d059940-fba8-47c9-9e0c-99f6c47d46e4",
+=======
+  "uuid": "7f847dd6-f5d3-47ec-81a4-160451dbbf51",
+>>>>>>> 702c0544ed65652a5a96eddcfcd5f666183f2878
   "importer": "folder",
   "isBundle": false,
   "bundleName": "",

@@ -1,6 +1,10 @@
 {
   "ver": "1.3.2",
+<<<<<<< HEAD
   "uuid": "0468e912-a40f-4430-a694-839012abd291",
+=======
+  "uuid": "6eeade7f-131e-4c75-81d1-3b76ef9ce51e",
+>>>>>>> 702c0544ed65652a5a96eddcfcd5f666183f2878
   "importer": "scene",
   "asyncLoadAssets": false,
   "autoReleaseAssets": false,
